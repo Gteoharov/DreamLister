@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		214AD8F520FFC0E200D181C3 /* teslaS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214AD8F420FFC0E200D181C3 /* teslaS.jpg */; };
 		214AD8F820FFC12E00D181C3 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AD8F720FFC12E00D181C3 /* MaterialView.swift */; };
+		214AD8FA20FFC64A00D181C3 /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AD8F920FFC64A00D181C3 /* ItemViewCell.swift */; };
 		214CA13720FF4BF50015AC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214CA13620FF4BF50015AC1D /* AppDelegate.swift */; };
 		214CA13920FF4BF50015AC1D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214CA13820FF4BF50015AC1D /* MainVC.swift */; };
 		214CA13C20FF4BF50015AC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214CA13A20FF4BF50015AC1D /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		214AD8F420FFC0E200D181C3 /* teslaS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teslaS.jpg; sourceTree = "<group>"; };
 		214AD8F720FFC12E00D181C3 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		214AD8F920FFC64A00D181C3 /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
 		214CA13320FF4BF50015AC1D /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214CA13620FF4BF50015AC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		214CA13820FF4BF50015AC1D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				214AD8F720FFC12E00D181C3 /* MaterialView.swift */,
+				214AD8F920FFC64A00D181C3 /* ItemViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				214CA15420FF50B50015AC1D /* Image+CoreDataProperties.swift in Sources */,
 				214CA15720FF50B50015AC1D /* ItemType+CoreDataClass.swift in Sources */,
 				214CA13720FF4BF50015AC1D /* AppDelegate.swift in Sources */,
+				214AD8FA20FFC64A00D181C3 /* ItemViewCell.swift in Sources */,
 				214CA15920FF50B50015AC1D /* Store+CoreDataClass.swift in Sources */,
 				214CA13F20FF4BF50015AC1D /* DreamLister.xcdatamodeld in Sources */,
 				214CA15320FF50B50015AC1D /* Image+CoreDataClass.swift in Sources */,
