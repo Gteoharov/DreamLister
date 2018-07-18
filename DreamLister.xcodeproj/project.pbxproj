@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214AD8F520FFC0E200D181C3 /* teslaS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 214AD8F420FFC0E200D181C3 /* teslaS.jpg */; };
+		214AD8F820FFC12E00D181C3 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AD8F720FFC12E00D181C3 /* MaterialView.swift */; };
 		214CA13720FF4BF50015AC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214CA13620FF4BF50015AC1D /* AppDelegate.swift */; };
-		214CA13920FF4BF50015AC1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214CA13820FF4BF50015AC1D /* ViewController.swift */; };
+		214CA13920FF4BF50015AC1D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214CA13820FF4BF50015AC1D /* MainVC.swift */; };
 		214CA13C20FF4BF50015AC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214CA13A20FF4BF50015AC1D /* Main.storyboard */; };
 		214CA13F20FF4BF50015AC1D /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 214CA13D20FF4BF50015AC1D /* DreamLister.xcdatamodeld */; };
 		214CA14120FF4BF60015AC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214CA14020FF4BF60015AC1D /* Assets.xcassets */; };
@@ -24,9 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		214AD8F420FFC0E200D181C3 /* teslaS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teslaS.jpg; sourceTree = "<group>"; };
+		214AD8F720FFC12E00D181C3 /* MaterialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		214CA13320FF4BF50015AC1D /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214CA13620FF4BF50015AC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		214CA13820FF4BF50015AC1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		214CA13820FF4BF50015AC1D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		214CA13B20FF4BF50015AC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		214CA13E20FF4BF50015AC1D /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		214CA14020FF4BF60015AC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		214AD8F620FFC10700D181C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				214AD8F720FFC12E00D181C3 /* MaterialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		214CA12A20FF4BF50015AC1D = {
 			isa = PBXGroup;
 			children = (
@@ -72,9 +84,11 @@
 		214CA13520FF4BF50015AC1D /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				214AD8F620FFC10700D181C3 /* View */,
 				214CA15B20FF50BC0015AC1D /* Model */,
 				214CA13620FF4BF50015AC1D /* AppDelegate.swift */,
-				214CA13820FF4BF50015AC1D /* ViewController.swift */,
+				214CA13820FF4BF50015AC1D /* MainVC.swift */,
+				214AD8F420FFC0E200D181C3 /* teslaS.jpg */,
 				214CA13A20FF4BF50015AC1D /* Main.storyboard */,
 				214CA14020FF4BF60015AC1D /* Assets.xcassets */,
 				214CA14220FF4BF60015AC1D /* LaunchScreen.storyboard */,
@@ -166,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				214CA14420FF4BF60015AC1D /* LaunchScreen.storyboard in Resources */,
+				214AD8F520FFC0E200D181C3 /* teslaS.jpg in Resources */,
 				214CA14120FF4BF60015AC1D /* Assets.xcassets in Resources */,
 				214CA13C20FF4BF50015AC1D /* Main.storyboard in Resources */,
 			);
@@ -181,7 +196,8 @@
 				214CA15620FF50B50015AC1D /* Item+CoreDataProperties.swift in Sources */,
 				214CA15520FF50B50015AC1D /* Item+CoreDataClass.swift in Sources */,
 				214CA15820FF50B50015AC1D /* ItemType+CoreDataProperties.swift in Sources */,
-				214CA13920FF4BF50015AC1D /* ViewController.swift in Sources */,
+				214AD8F820FFC12E00D181C3 /* MaterialView.swift in Sources */,
+				214CA13920FF4BF50015AC1D /* MainVC.swift in Sources */,
 				214CA15A20FF50B50015AC1D /* Store+CoreDataProperties.swift in Sources */,
 				214CA15420FF50B50015AC1D /* Image+CoreDataProperties.swift in Sources */,
 				214CA15720FF50B50015AC1D /* ItemType+CoreDataClass.swift in Sources */,
