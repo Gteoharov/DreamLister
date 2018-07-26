@@ -22,7 +22,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         tableView.delegate = self
         tableView.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib
+        
+        generateTestData()
+        attemptFetch()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,6 +66,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         fetchRequest.sortDescriptors = [dateSort]
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        self.controller = controller
         
         do {
             try controller.performFetch()
@@ -113,7 +117,25 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
     
     
-    
+    func generateTestData() {
+        
+        let item = Item(context: context)
+        item.title = "Macbook Pro"
+        item.price = 3999
+        item.details = "I can't wait to have it in my own bag!"
+        
+        let item1 = Item(context: context)
+        item1.title = "Bose Headphones"
+        item1.price = 399
+        item1.details = "It's so nice to hear clear and nice music thrue the headphones .."
+        
+        let item2 = Item(context: context)
+        item2.title = "Tesla Model S"
+        item2.price = 110000
+        item2.details = "Want to wake up every single morning and just go to garage and drink my coffe in front of my dream car!"
+        
+        ad.saveContext()
+    }
     
 }
 
