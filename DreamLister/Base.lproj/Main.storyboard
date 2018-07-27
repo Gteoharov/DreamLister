@@ -131,16 +131,48 @@
                     <navigationItem key="navigationItem" title="DreamLister" id="cKY-FK-mhT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="T2z-Yp-DZo">
                             <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="mA3-vp-Z7P" kind="show" identifier="ItemDetailsVCNew" id="qng-vc-0V7"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="segment" destination="kjw-hc-RVV" id="Ui7-lf-HQb"/>
                         <outlet property="tableView" destination="OTq-nJ-Wfg" id="Klk-9G-KRR"/>
+                        <segue destination="mA3-vp-Z7P" kind="show" identifier="ItemDetailsVC" id="1Pv-xw-ys7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1656.8" y="1172.5637181409297"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vl8-0I-pc5">
+            <objects>
+                <viewController id="mA3-vp-Z7P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="42R-ZO-F6b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick.png" translatesAutoresizingMaskIntoConstraints="NO" id="w29-Yx-fZG">
+                                <rect key="frame" x="8" y="72" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4ps-v9-FgR"/>
+                                    <constraint firstAttribute="height" constant="100" id="nFk-W8-XME"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w29-Yx-fZG" firstAttribute="top" secondItem="qKT-O0-Fxo" secondAttribute="top" constant="8" id="dXf-ve-rIK"/>
+                            <constraint firstItem="w29-Yx-fZG" firstAttribute="leading" secondItem="qKT-O0-Fxo" secondAttribute="leading" constant="8" id="qU1-7a-U4J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qKT-O0-Fxo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTK-Iq-pNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2588" y="1170"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Lu-r0-1cG">
@@ -166,6 +198,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imagePick.png" width="300" height="300"/>
         <image name="teslaS.jpg" width="625" height="370"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1Pv-xw-ys7"/>
+    </inferredMetricsTieBreakers>
 </document>
