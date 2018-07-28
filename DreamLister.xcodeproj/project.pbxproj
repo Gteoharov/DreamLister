@@ -26,6 +26,7 @@
 		214CA15A20FF50B50015AC1D /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214CA15220FF50B50015AC1D /* Store+CoreDataProperties.swift */; };
 		2157E8A6210BAC6B0068CC36 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2157E8A5210BAC6B0068CC36 /* ItemDetailsVC.swift */; };
 		2157E8AA210BAFBB0068CC36 /* imagePick.png in Resources */ = {isa = PBXBuildFile; fileRef = 2157E8A9210BAFBB0068CC36 /* imagePick.png */; };
+		2184257F210C8B5500CFDE87 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2184257E210C8B5500CFDE87 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		214CA15220FF50B50015AC1D /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2157E8A5210BAC6B0068CC36 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
 		2157E8A9210BAFBB0068CC36 /* imagePick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagePick.png; sourceTree = "<group>"; };
+		2184257E210C8B5500CFDE87 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				214AD8F720FFC12E00D181C3 /* MaterialView.swift */,
+				2184257E210C8B5500CFDE87 /* CustomTextField.swift */,
 				214AD8F920FFC64A00D181C3 /* ItemViewCell.swift */,
 			);
 			path = View;
@@ -225,6 +228,7 @@
 				214CA15920FF50B50015AC1D /* Store+CoreDataClass.swift in Sources */,
 				214CA13F20FF4BF50015AC1D /* DreamLister.xcdatamodeld in Sources */,
 				214CA15320FF50B50015AC1D /* Image+CoreDataClass.swift in Sources */,
+				2184257F210C8B5500CFDE87 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
