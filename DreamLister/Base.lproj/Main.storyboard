@@ -168,7 +168,7 @@
                                     <constraint firstAttribute="height" constant="100" id="rpD-XB-3Fd"/>
                                 </constraints>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d8l-5Q-KLn" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d8l-5Q-KLn" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="116" y="80" width="251" height="30"/>
                                 <color key="backgroundColor" white="0.8374840617" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -178,7 +178,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Price" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9BT-Yg-P0A" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9BT-Yg-P0A" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="116" y="126" width="251" height="30"/>
                                 <color key="backgroundColor" white="0.8374840617" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -188,7 +188,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Details" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlG-ri-6UO" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlG-ri-6UO" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="8" y="180" width="359" height="60"/>
                                 <color key="backgroundColor" white="0.8374840617" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -214,6 +214,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" white="0.8374840617" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="mA3-vp-Z7P" eventType="touchUpInside" id="g2q-BU-Kgz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTZ-Kx-uSZ">
                                 <rect key="frame" x="139" y="380" width="96" height="21"/>

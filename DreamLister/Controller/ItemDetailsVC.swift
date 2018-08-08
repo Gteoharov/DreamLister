@@ -29,20 +29,20 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         storePicker.delegate = self
         storePicker.dataSource = self
     
-        let store = Store(context: context)
-        store.name = "Best Buy"
-        let store2 = Store(context: context)
-        store2.name = "Tesla Dealership"
-        let store3 = Store(context: context)
-        store3.name = "DJI Mavic Pro"
-        let store4 = Store(context: context)
-        store4.name = "JBL"
-        let store5 = Store(context: context)
-        store5.name = "iMac Pro"
-        let store6 = Store(context: context)
-        store6.name = "Xbox"
-
-        ad.saveContext()
+//        let store = Store(context: context)
+//        store.name = "Best Buy"
+//        let store2 = Store(context: context)
+//        store2.name = "Tesla Dealership"
+//        let store3 = Store(context: context)
+//        store3.name = "DJI Mavic Pro"
+//        let store4 = Store(context: context)
+//        store4.name = "JBL"
+//        let store5 = Store(context: context)
+//        store5.name = "Apple"
+//        let store6 = Store(context: context)
+//        store6.name = "Amazon"
+//
+//        ad.saveContext()
         getStores()
         
     }
@@ -78,5 +78,35 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
             // handle ERROR:
         }
     }
-
+    
+    
+    @IBAction func savePressed(_ sender: UIButton) {
+        let item = Item(context: context)
+        
+        if let title = titleField.text {
+            item.title = title
+        }
+        
+        if let price = priceField.text {
+            item.price = (price as NSString).doubleValue
+        }
+        
+        if let details = detailsField.text {
+            item.details = details
+        }
+        
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        
+        ad.saveContext()
+        
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 }
