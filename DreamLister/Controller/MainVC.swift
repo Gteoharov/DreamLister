@@ -28,18 +28,20 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemViewCell", for: indexPath) as! ItemViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         
         configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
         
         return cell
     }
     
-    func configureCell(cell: ItemViewCell, indexPath: NSIndexPath) {
+    func configureCell(cell: ItemCell, indexPath: NSIndexPath) {
         
         let item = controller.object(at: indexPath as IndexPath)
         cell.configureCell(item: item)
     }
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let sections = controller.sections {
@@ -101,7 +103,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             break
         case .update:
             if let indexPath = indexPath {
-                let cell = tableView.cellForRow(at: indexPath) as! ItemViewCell
+                let cell = tableView.cellForRow(at: indexPath) as! ItemCell
                 configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
             }
             break

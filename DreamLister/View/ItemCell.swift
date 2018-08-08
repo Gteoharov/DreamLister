@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemViewCell: UITableViewCell {
+class ItemCell: UITableViewCell {
 
     @IBOutlet weak var thumb: UIImageView!
     @IBOutlet weak var title: UILabel!
